@@ -48,12 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
       deleteButton.textContent = "Delete";
       //adds delete button to the task items.
       deleteButton.addEventListener("click", () => {
-        //send a confirmation message
-        if(confirm(`Has ${user} completed the task by ${dueDate}?`)) {
-          //remove task from DOM 
-          taskItem.remove();
-        }
+        taskItem.remove();
       })
+       
+       
+       
       taskItem.appendChild(deleteButton);
 
       }
